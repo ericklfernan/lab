@@ -6,9 +6,9 @@ services:
       context: .
       dockerfile: dockerfile.python
       args:
-        - BASE_IMAGE=python:latest
-        - APP_VERSION=0.0.1
+        - BASE_IMAGE=python:alpine
+        - APP_VERSION=1
     environment:
       - DEBUG=true
-    image: udek/python:0.0.1
+    image: udek/python:1
 
