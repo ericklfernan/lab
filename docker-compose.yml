@@ -1,0 +1,14 @@
+# docker-compose.yml
+version: '3'
+services:
+  python_service:
+    build:
+      context: .
+      dockerfile: dockerfile.python
+      args:
+        - BASE_IMAGE=python:3.9
+        - APP_VERSION=0.0.1
+    environment:
+      - DEBUG=true
+    image: udek/python:0.0.1
+
