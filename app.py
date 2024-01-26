@@ -25,7 +25,7 @@ class MyHandler(FileSystemEventHandler):
 #-----------------------------------------------------------------------------------
 
 # Set the path to the folder you want to monitor
-folder_path = '.'
+folder_path = '/app/data'
 event_handler = MyHandler()
 observer = Observer()
 observer.schedule(event_handler, path=folder_path, recursive=False)
