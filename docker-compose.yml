@@ -10,10 +10,10 @@ services:
         - APP_VERSION=1
     environment:
       - DEBUG=true
-    image: udek/python:1
+    image: imgx:x
     volumes:
-      - mydata:/app/data
+      - volx:/app/data
 
 volumes:
-  mydata:
+  volx:
 
